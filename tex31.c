@@ -1,9 +1,12 @@
 #include <stdio.h>
 int main(void)
 {
-    int x ;
-    printf("Enter x:\n");
-    scanf("%d",&x);
-    printf("x:%d-%d-%d\n", x / 100, x / 10 % 10, x % 10);
-    return 0;
+   float e,m;
+   printf("Enter e:\n");
+   scanf("%d,&e");
+   if (e<=50)
+   printf("m=%.1f\n",0.53*e);
+   if(e>50)
+   printf("m=%.1f\n",0.53*50+0.05*(e-50));
+   return 0;
 }
